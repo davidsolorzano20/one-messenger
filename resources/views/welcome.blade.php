@@ -7,7 +7,7 @@
       </div>
 
       <div class="tab-pane fade active in" id="gmail">
-        <webview id="gmail" class="davis-webviews" src="https://app.activecollab.com/138123/projects" style="height: 268px;"></webview>
+        <webview id="gmail" class="davis-webviews" src="https://mail.google.com" style="height: 268px;"></webview>
       </div>
       <div class="tab-pane fade" id="facebook">
         <webview id="facebook" class="davis-webviews" src="https://www.facebook.com" style="height: 268px;"></webview>
