@@ -17,3 +17,11 @@ Route::get('/', function () {
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+
+/*RewriteEngine on
+RewriteRule ^(.*)$ public/$1 [L]
+RewriteCond %{HTTP_HOST} ^nicaraguacraftbrewing\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.nicaraguacraftbrewing\.com$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^nicaragua$ "http\:\/\/www\.nicaraguacraftbrewing\.com\/" [R=301,L]*/
