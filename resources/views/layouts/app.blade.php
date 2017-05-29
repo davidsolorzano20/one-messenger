@@ -15,18 +15,18 @@
     <link href="{{ asset('css/loader.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="loader_app">
-        <div class="imagen" style="padding-top: 10%;padding-left: 40%;padding-right: 40%;">
-            <img src="icon/plane.png" style="width: 230px;"/>
-            <br>
+<div id="loader_app">
+    <div class="imagen" style="padding-top: 10%;text-align: center;">
+        <img src="icon/plane.png" style="width: 230px;margin: 0 auto;display: block;">
+        <br>
 
-            <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="circle" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg>
-            <h1 style="text-align: center;display: inline-block;margin-left: 20px;position: absolute;">
-                Cargando
-            </h1>
+        <svg class="spinner" width="35px" height="35px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="circle" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg>
+        <h1>
+            Cargando
+        </h1>
 
-        </div>
     </div>
+</div>
 
     <div id="app" style="display: none;">
         <nav class="navbar navbar-default navbar-fixed-top" style="height: 25px">
