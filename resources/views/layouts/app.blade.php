@@ -13,6 +13,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/loader.css') }}" rel="stylesheet">
+ <link href='icon/plane.png' rel='icon' >
 </head>
 <body>
     <div id="loader_app">
