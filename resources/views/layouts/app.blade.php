@@ -14,8 +14,10 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/loader.css') }}" rel="stylesheet">
  <link href='icon/plane.png' rel='icon' >
+
+
 </head>
-<body>
+<body id="body_text">
 <div id="loader_app">
     <div class="imagen" style="padding-top: 10%;text-align: center;">
         <img src="icon/plane.png" style="width: 230px;margin: 0 auto;display: block;">
@@ -26,6 +28,14 @@
         </h1>
     </div>
 </div>
+
+<script>
+	if(typeof process === 'object') {}
+	else {
+		var body = document.getElementById("body_text");
+		body.remove('div');
+	}
+</script>
 
     <div id="app" style="display: none;">
         <nav class="navbar navbar-default navbar-fixed-top" style="height: 25px">
