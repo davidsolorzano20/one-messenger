@@ -15,6 +15,12 @@
 		$(".davis-webviews").css({'height': height + 'px'});
 	}, 2000);
 
+	$(window).resize(function () {
+		var width = $(window).width();
+		var height = $(window).height() - 51;
+		$(".davis-webviews").css({'height': height + 'px'});
+	});
+
 	setTimeout(function () {
 		$('#loader_app').hide();
 		$('#app').show();
