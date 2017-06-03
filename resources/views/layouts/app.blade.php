@@ -30,11 +30,11 @@
 </div>
 
 <script>
-	if(typeof process === 'object') {}
+/*	if(typeof process === 'object') {}
 	else {
 		var body = document.getElementById("body_text");
 		body.remove('div');
-	}
+	}*/
 </script>
 
     <div id="app" style="display: none;">
@@ -67,52 +67,59 @@
                     <ul class="nav navbar-nav nav-tabs navbar-right" style="margin-top: -2px;">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li class="active">
+                            <li>
                                 <a href="#gmail" data-toggle="tab">
                                     <img src="services/gmail.png" style="width: 20px;"/>
                                     Gmail
+                                    <span id="badge-gmail"  class="badge" style="display:none;left: 4px;position: absolute;margin-top: -32px;padding: 2px 3px;border-radius: 2px;background: rgb(254, 99, 99);color: rgb(255, 255, 255);font-size: 10px">New</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#facebook" data-toggle="tab">
                                     <img src="services/facebook.png" style="width: 20px;"/>
                                     Facebook
+                                    <span id="badge-facebook"  class="badge" style="display:none;left: 4px;position: absolute;margin-top: -32px;padding: 2px 3px;border-radius: 2px;background: rgb(254, 99, 99);color: rgb(255, 255, 255);font-size: 10px">New</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#messenger" data-toggle="tab">
                                     <img src="services/messenger.png" style="width: 20px;"/>
                                     Messenger
+                                    <span id="badge-messenger"  class="badge" style="display:none;left: 4px;position: absolute;margin-top: -32px;padding: 2px 3px;border-radius: 2px;background: rgb(254, 99, 99);color: rgb(255, 255, 255);font-size: 10px">New</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#whatsapp" data-toggle="tab">
                                     <img src="services/whatsapp.png" style="width: 20px"/>
                                     Whatsapp
+                                    <span id="badge-whatsapp"  class="badge" style="display:none;left: 4px;position: absolute;margin-top: -32px;padding: 2px 3px;border-radius: 2px;background: rgb(254, 99, 99);color: rgb(255, 255, 255);font-size: 10px">New</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#telegram" data-toggle="tab">
                                     <img src="services/telegram.png" style="width: 20px"/>
                                     Telegram
+                                    <span id="badge-telegram"  class="badge" style="display:none;left: 4px;position: absolute;margin-top: -32px;padding: 2px 3px;border-radius: 2px;background: rgb(254, 99, 99);color: rgb(255, 255, 255);font-size: 10px">New</span>
                                 </a>
                             </li>
                             {{--<li>
-                                <a href="#linkedin" data-toggle="tab">
-                                    <img src="services/linkedin.png" style="width: 20px;"/>
-                                    Linkedin
-                                </a>
-                            </li>--}}
+																<a href="#linkedin" data-toggle="tab">
+																		<img src="services/linkedin.png" style="width: 20px;"/>
+																		Linkedin
+																</a>
+														</li>--}}
                             <li>
                                 <a href="#twitter" data-toggle="tab">
                                     <img src="services/twitter.png" style="width: 20px;"/>
                                     Twitter
+                                    <span id="badge-twitter"  class="badge" style="display:none;left: 4px;position: absolute;margin-top: -32px;padding: 2px 3px;border-radius: 2px;background: rgb(254, 99, 99);color: rgb(255, 255, 255);font-size: 10px">New</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#youtube" data-toggle="tab">
                                     <img src="services/youtube.png" style="width: 25px;"/>
                                     Youtube
+                                    <span id="badge-youtube"  class="badge" style="display:none;left: 4px;position: absolute;margin-top: -32px;padding: 2px 3px;border-radius: 2px;background: rgb(254, 99, 99);color: rgb(255, 255, 255);font-size: 10px">New</span>
                                 </a>
                             </li>
                         @else
