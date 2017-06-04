@@ -8,7 +8,6 @@
 	const youtube = document.querySelector('webview#youtube-views');
 	const electron = require('electron');
 	const shell = require('electron').shell;
-//	const ipcRenderer = require('electron').ipcRenderer;
 
 	setTimeout(function () {
 		var width = $(window).width();
