@@ -49,17 +49,17 @@
                         <i class="fa fa-navicon fa-lg"></i>
                     </button>--}}
 
-                    <a id="next"  style="display: block;margin-top: -1px;" type="button" class="navbar-toggle collapsed">
+                    <a id="next"  style="display: block;margin-top: -1px;" href="#" class="toolbox collapsed">
                         <span class="sr-only">Toggle Navigation</span>
                         <i class="fa fa-angle-right fa-2x"></i>
                     </a>
 
-                    <a id="reload"  style="display: block;margin-top: 3px;" type="button" class="navbar-toggle collapsed">
+                    <a id="reload"  style="display: block;margin-top: 3px;" href="#" class="toolbox collapsed">
                         <span class="sr-only">Toggle Navigation</span>
                         <i class="fa fa-refresh fa-lg"></i>
                     </a>
 
-                    <a id="back"  style="display: block;margin-top: -1px;" type="button" class="navbar-toggle collapsed">
+                    <a id="back"  style="display: block;margin-top: -1px;" href="#" class="toolbox collapsed">
                         <span class="sr-only">Toggle Navigation</span>
                         <i class="fa fa-angle-left fa-2x"></i>
                     </a>
