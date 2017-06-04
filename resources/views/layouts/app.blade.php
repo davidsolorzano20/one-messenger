@@ -13,6 +13,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/loader.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
  <link href='icon/plane.png' rel='icon' >
 
 
@@ -43,11 +44,24 @@
                 <div class="navbar-header">
 
                     <!-- Collapsed Hamburger -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                  {{--  <button id="bar"  style="display: block;margin-top: 4px;" type="button" class="navbar-toggle collapsed">
                         <span class="sr-only">Toggle Navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                        <i class="fa fa-navicon fa-lg"></i>
+                    </button>--}}
+
+                    <button id="next"  style="display: block;margin-top: -1px;" type="button" class="navbar-toggle collapsed">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <i class="fa fa-angle-right fa-2x"></i>
+                    </button>
+
+                    <button id="reload"  style="display: block;margin-top: 3px;" type="button" class="navbar-toggle collapsed">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <i class="fa fa-refresh fa-lg"></i>
+                    </button>
+
+                    <button id="back"  style="display: block;margin-top: -1px;" type="button" class="navbar-toggle collapsed">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <i class="fa fa-angle-left fa-2x"></i>
                     </button>
 
                     <!-- Branding Image -->
@@ -67,7 +81,7 @@
                     <ul class="nav navbar-nav nav-tabs navbar-right" style="margin-top: -2px;">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li>
+                            <li class="active">
                                 <a href="#gmail" data-toggle="tab">
                                     <img src="services/gmail.png" style="width: 20px;"/>
                                     Gmail
@@ -154,5 +168,8 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/window.js') }}"></script>
+<script>
+
+</script>
 </body>
 </html>

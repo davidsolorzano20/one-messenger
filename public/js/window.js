@@ -1,13 +1,14 @@
 (function ($) {
-	const gmail = document.querySelector('webview#gmail');
-	const facebook = document.querySelector('webview#facebook');
-	const messenger = document.querySelector('webview#messenger');
-	const whatsapp = document.querySelector('webview#whatsapp');
-	const telegram = document.querySelector('webview#telegram');
-	const twitter = document.querySelector('webview#twitter');
-	const youtube = document.querySelector('webview#youtube');
+	const gmail = document.querySelector('webview#gmail-views');
+	const facebook = document.querySelector('webview#facebook-views');
+	const messenger = document.querySelector('webview#messenger-views');
+	const whatsapp = document.querySelector('webview#whatsapp-views');
+	const telegram = document.querySelector('webview#telegram-views');
+	const twitter = document.querySelector('webview#twitter-views');
+	const youtube = document.querySelector('webview#youtube-views');
+	const electron = require('electron');
 	const shell = require('electron').shell;
-	const ipcRenderer = require('electron').ipcRenderer;
+//	const ipcRenderer = require('electron').ipcRenderer;
 
 	setTimeout(function () {
 		var width = $(window).width();
@@ -63,7 +64,7 @@
 		} else {
 			$('#badge-youtube').css({'display': 'none'});
 		}
-	}, 30);
+	}, 10);
 
 	gmail.addEventListener('new-window', function (event) {
 		const protocol = require('url').parse(event.url).protocol;
@@ -100,28 +101,6 @@
 		}
 	});
 
-
-	telegram.addEventListener("ipc-message", function (e) {
-		if (e.channel === "window-data") {
-			// console.log(e.args[0]);
-
-			/*	$(".tab.active .tab-favicon").attr("src", e.args[0].favicon);*/
-			setInterval(function () {
-				alert(e.args[0].title);
-
-			}, 1000)
-			/*$("#url-bar").val(e.args[0].url);*/
-
-			/*
-			 if ($(".tab.active").data("page") === "pages/start.html") {
-			 $(".tab.active .tab-title").html(e.args[0].title);
-			 } else {
-			 }
-			 */
-		}
-	});
-
-
 	twitter.addEventListener('new-window', function (event) {
 		const protocol = require('url').parse(event.url).protocol;
 		if (protocol === 'http:' || protocol === 'https:') {
@@ -136,16 +115,24 @@
 		}
 	});
 
+	var link = "gmail";
+	$("ul.nav-tabs > li > a").click(function() {
+		var clicked = $(this).attr('href');
+		link = clicked.substring(1);
+	});
 
-	/*	 $("a#back").click(function ()	{
-	 var webview = document.getElementById("google-web");
-	 webview.goBack();
+	$("#reload").click(function () {
+		var webview = document.querySelector('#'+link+"-views");
+		webview.reload();
+	});
+	$("#back").click(function ()	{
+		var webview = document.querySelector('#'+link+"-views");
+		webview.goBack();
+	});
+	 $("#next").click(function ()	{
+		 var webview = document.querySelector('webview#'+link+"-views");
+	   webview.goForward();
 	 });
-
-	 $("a#next").click(function ()	{
-	 var webview = document.getElementById("google-web");
-	 webview.goForward();
-	 });*/
 
 })($, jQuery);
 
