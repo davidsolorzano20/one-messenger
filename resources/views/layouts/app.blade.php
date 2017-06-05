@@ -82,13 +82,6 @@
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             <li class="active">
-                                <a href="#gmail" data-toggle="tab">
-                                    <img src="services/gmail.png" style="width: 20px;"/>
-                                    Gmail
-                                    <span id="badge-gmail"  class="badge" style="display:none;left: 4px;position: absolute;margin-top: -32px;padding: 2px 3px;border-radius: 2px;background: rgb(254, 99, 99);color: rgb(255, 255, 255);font-size: 10px">New</span>
-                                </a>
-                            </li>
-                            <li>
                                 <a href="#facebook" data-toggle="tab">
                                     <img src="services/facebook.png" style="width: 20px;"/>
                                     Facebook
@@ -114,6 +107,13 @@
                                     <img src="services/telegram.png" style="width: 20px"/>
                                     Telegram
                                     <span id="badge-telegram"  class="badge" style="display:none;left: 4px;position: absolute;margin-top: -32px;padding: 2px 3px;border-radius: 2px;background: rgb(254, 99, 99);color: rgb(255, 255, 255);font-size: 10px">New</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#gmail" data-toggle="tab">
+                                    <img src="services/gmail.png" style="width: 20px;"/>
+                                    Gmail
+                                    <span id="badge-gmail"  class="badge" style="display:none;left: 4px;position: absolute;margin-top: -32px;padding: 2px 3px;border-radius: 2px;background: rgb(254, 99, 99);color: rgb(255, 255, 255);font-size: 10px">New</span>
                                 </a>
                             </li>
                             {{--<li>
