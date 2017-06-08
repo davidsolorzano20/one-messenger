@@ -8,6 +8,9 @@
 	const youtube = document.querySelector('webview#youtube-views');
 	const electron = require('electron');
 	const shell = require('electron').shell;
+	const path = require('path');
+	const fs = require('fs');
+	const app = electron.app;
 
 	setTimeout(function () {
 		var width = $(window).width();
@@ -157,6 +160,22 @@
 			 $("#reload").removeClass('animate-drawer');
 		 });
 	 },1000);
+
+	var chromeCacheDir = path.join('userData', 'Cache');
+	if(fs.existsSync(chromeCacheDir)) {
+		var files = fs.readdirSync(chromeCacheDir);
+		for(var i=0; i<files.length; i++) {
+			var filename = path.join(chromeCacheDir, files[i]);
+			if (fs.existsSync(filename)) {
+				try {
+					fs.unlinkSync(filename);
+				}
+				catch (e) {
+					console.log(e);
+				}
+			}
+		}
+	}
 
 })($, jQuery);
 
