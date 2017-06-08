@@ -5,9 +5,6 @@
     <div class="tab-content" style="margin-left: -1px;margin-right: -1px;">
       <div class="tab-pane fade" id="home">
       </div>
-      <div class="tab-pane fade " id="gmail">
-        <webview id="gmail-views" class="davis-webviews" src="https://mail.google.com" style="height: 268px;"></webview>
-      </div>
       <div class="tab-pane fade" id="gmail">
         <webview id="gmail-views" class="davis-webviews" src="https://mail.google.com" style="height: 268px;"></webview>
       </div>
