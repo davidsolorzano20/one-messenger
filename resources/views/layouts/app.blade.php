@@ -8,24 +8,24 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>One Messenger</title>
+    <title>ThunderApp</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/loader.css') }}" rel="stylesheet">
     <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
- <link href='icon/plane.png' rel='icon' >
+ <link href='icon/send.png' rel='icon' >
 
 
 </head>
 <body id="body_text">
 <div id="loader_app">
     <div class="imagen" style="padding-top: 10%;text-align: center;">
-        <img src="icon/plane.png" style="width: 230px;margin: 0 auto;display: block;">
+        <img src="icon/send.png" style="width: 100px;margin: 0 auto;display: block;">
         <br>
         <svg class="spinner" width="35px" height="35px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="circle" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg>
-        <h1>
-            Cargando
+        <h1 style="font-size: 60px">
+            ThunderApp
         </h1>
     </div>
 </div>
@@ -66,8 +66,8 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="#" style=" margin-left: 20px;">
-                        <img src="icon/plane.png" style="width: 70px;margin-top: -26px;position: absolute;margin-left: -60px;"/>
-                        <strong style="color: #607D8B;">One Messenger</strong>
+                        <img src="icon/send.png" style="width: 40px;margin-top: -10px;position: absolute;margin-left: -45px;"/>
+                        <strong style="color: #607D8B;">ThunderApp</strong>
                     </a>
                 </div>
 
