@@ -11,6 +11,7 @@
     <title>ThunderApp</title>
 
     <!-- Styles -->
+    <link href="{{ asset('css/css.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/loader.css') }}" rel="stylesheet">
     <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
@@ -20,11 +21,11 @@
 </head>
 <body id="body_text">
 <div id="loader_app">
-    <div class="imagen" style="padding-top: 10%;text-align: center;">
+    <div class="imagen" style="margin: 0 auto;text-align: center;">
         <img src="icon/send.png" style="width: 100px;margin: 0 auto;display: block;">
         <br>
         <svg class="spinner" width="35px" height="35px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="circle" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg>
-        <h1 style="font-size: 60px">
+        <h1 style="font-size: 60px;font-weight: 100;">
             ThunderApp
         </h1>
     </div>
