@@ -15,7 +15,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/loader.css') }}" rel="stylesheet">
     <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
- <link href='icon/send.png' rel='icon' >
+    <link href='icon/send.png' rel='icon' >
 
 
 </head>
@@ -162,6 +162,18 @@
                 </div>
             </div>
         </nav>
+
+        <div class="col-md-12">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- anuncio 1 -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:728px;height:90px"
+                 data-ad-client="ca-pub-8196413244458485"
+                 data-ad-slot="8293281058"></ins>
+            <script>
+			        (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
 
         @yield('content')
     </div>
