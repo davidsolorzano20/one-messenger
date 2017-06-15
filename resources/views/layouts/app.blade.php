@@ -162,18 +162,19 @@
                 </div>
             </div>
         </nav>
-
+{{--
         <div class="col-md-12">
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <!-- anuncio 1 -->
             <ins class="adsbygoogle"
                  style="display:inline-block;width:728px;height:90px"
                  data-ad-client="ca-pub-8196413244458485"
-                 data-ad-slot="8293281058"></ins>
+                 data-ad-slot="8293281058"
+                 google_adtest="on"></ins>
             <script>
 			        (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
-        </div>
+        </div>--}}
 
         @yield('content')
     </div>
