@@ -1,6 +1,7 @@
 (function ($) {
 	const gmail = document.querySelector('webview#gmail-views');
 	const facebook = document.querySelector('webview#facebook-views');
+	const linkedin = document.querySelector('webview#linkedin-views');
 	const messenger = document.querySelector('webview#messenger-views');
 	const whatsapp = document.querySelector('webview#whatsapp-views');
 	const telegram = document.querySelector('webview#telegram-views');
@@ -35,6 +36,12 @@
 			$('#badge-facebook').css({'display': ''});
 		} else {
 			$('#badge-facebook').css({'display': 'none'});
+		}
+		if (linkedin.getTitle().indexOf('(') != -1) {
+			$('#badge-linkedin').css({'visibility': 'visible'});
+			$('#badge-linkedin').css({'display': ''});
+		} else {
+			$('#badge-linkedin').css({'display': 'none'});
 		}
 		if (gmail.getTitle().indexOf('(') != -1) {
 			$('#badge-gmail').css({'visibility': 'visible'});

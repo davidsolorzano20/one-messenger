@@ -19,13 +19,15 @@
 
 
 </head>
-<body id="body_text">
+<body id="body_text" style="background: #F5F5F5;">
 <div id="loader_app">
     <div class="imagen" style="margin: 0 auto;text-align: center;">
-        <img src="icon/send.png" style="width: 100px;margin: 0 auto;display: block;">
+        <div style="border: 5px solid white;border-radius: 50%;width: 110px;margin: 0 auto;display: block;">
+            <img src="icon/send.png" style="width: 100px;margin: 0 auto;display: block;">
+        </div>
         <br>
         <svg class="spinner" width="35px" height="35px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="circle" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg>
-        <h1 style="font-size: 60px;font-weight: 100;">
+        <h1 style="font-size: 60px;font-weight: 100;color: cadetblue;text-shadow: 1px 1px 1px lightskyblue;">
             ThunderApp
         </h1>
     </div>
@@ -41,7 +43,7 @@
 
     <div id="app" style="display: none;">
         <nav class="navbar navbar-default navbar-fixed-top" style="height: 25px">
-            <div class="container">
+            <div class="container" style="width: 97%;">
                 <div class="navbar-header">
 
                     <!-- Collapsed Hamburger -->
@@ -67,8 +69,10 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="#" style=" margin-left: 20px;">
-                        <img src="icon/send.png" style="width: 40px;margin-top: -10px;position: absolute;margin-left: -45px;"/>
-                        <strong style="color: #607D8B;">ThunderApp</strong>
+                        <div style="border: 3px solid white;border-radius: 50%;width: 41px;height: 41px;margin-top: -10px;position: absolute;margin-left: -45px;">
+                            <img src="icon/send.png" style="width: 35px;position: absolute;"/>
+                        </div>
+                        <strong style="color: cadetblue;text-shadow: 1px 1px 1px lightskyblue;">ThunderApp</strong>
                     </a>
                 </div>
 
@@ -87,6 +91,20 @@
                                     <img src="services/facebook.png" style="width: 20px;"/>
                                     Facebook
                                     <span id="badge-facebook"  class="badge" style="display:none;left: 4px;position: absolute;margin-top: -32px;padding: 2px 3px;border-radius: 2px;background: rgb(254, 99, 99);color: rgb(255, 255, 255);font-size: 10px">New</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#linkedin" data-toggle="tab">
+                                    <img src="services/linkedin.png" style="width: 20px;"/>
+                                    Linkedin
+                                    <span id="badge-linkedin"  class="badge" style="display:none;left: 4px;position: absolute;margin-top: -32px;padding: 2px 3px;border-radius: 2px;background: rgb(254, 99, 99);color: rgb(255, 255, 255);font-size: 10px">New</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#twitter" data-toggle="tab">
+                                    <img src="services/twitter.png" style="width: 20px;"/>
+                                    Twitter
+                                    <span id="badge-twitter"  class="badge" style="display:none;left: 4px;position: absolute;margin-top: -32px;padding: 2px 3px;border-radius: 2px;background: rgb(254, 99, 99);color: rgb(255, 255, 255);font-size: 10px">New</span>
                                 </a>
                             </li>
                             <li>
@@ -115,19 +133,6 @@
                                     <img src="services/gmail.png" style="width: 20px;"/>
                                     Gmail
                                     <span id="badge-gmail"  class="badge" style="display:none;left: 4px;position: absolute;margin-top: -32px;padding: 2px 3px;border-radius: 2px;background: rgb(254, 99, 99);color: rgb(255, 255, 255);font-size: 10px">New</span>
-                                </a>
-                            </li>
-                            {{--<li>
-																<a href="#linkedin" data-toggle="tab">
-																		<img src="services/linkedin.png" style="width: 20px;"/>
-																		Linkedin
-																</a>
-														</li>--}}
-                            <li>
-                                <a href="#twitter" data-toggle="tab">
-                                    <img src="services/twitter.png" style="width: 20px;"/>
-                                    Twitter
-                                    <span id="badge-twitter"  class="badge" style="display:none;left: 4px;position: absolute;margin-top: -32px;padding: 2px 3px;border-radius: 2px;background: rgb(254, 99, 99);color: rgb(255, 255, 255);font-size: 10px">New</span>
                                 </a>
                             </li>
                             <li>
@@ -162,19 +167,6 @@
                 </div>
             </div>
         </nav>
-{{--
-        <div class="col-md-12">
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- anuncio 1 -->
-            <ins class="adsbygoogle"
-                 style="display:inline-block;width:728px;height:90px"
-                 data-ad-client="ca-pub-8196413244458485"
-                 data-ad-slot="8293281058"
-                 google_adtest="on"></ins>
-            <script>
-			        (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>--}}
 
         @yield('content')
     </div>
